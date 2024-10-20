@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her Name</title>
+    <!-- Google Font for Playful Handwritten Text -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffe4e1, #ffcccb); /* Soft pink gradient background */
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Styling for her big, cute name */
+        .her-name {
+            font-family: 'Pacifico', cursive; /* Playful handwritten font */
+            font-size: 5em; /* Large size */
+            color: #f76a8c; /* Soft pink */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            margin-top: 20px;
+            animation: floatName 6s ease-in-out infinite; /* Soft floating animation */
+        }
+
+        @keyframes floatName {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Big, Cute Name on Top -->
+    <div class="her-name">[TISHU]</div> <!-- Replace [Her Name] with her actual name -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons I Love You</title>
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe4e1 20%, #ffcccb 40%, #fbcce7 60%, #fbe3b9 100%);
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.5); /* Light pink */
+    border-radius: 50%; /* Circle */
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(250, 218, 221, 0.6); /* Very soft pink */
+    border-radius: 50%; /* Another circle */
+    z-index: -1;
+}
+
+.small-shapes {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 240, 245, 0.7); /* Lighter soft pink */
+    border-radius: 50%; /* Circle */
+    top: 40%;
+    left: 40%;
+    z-index: -1;
+}
+
+.small-shapes::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 228, 225, 0.7); /* Slightly different pastel */
+    border-radius: 50%;
+    top: 150px;
+    left: 50px;
+    z-index: -1;
+}
+
+@keyframes moveShapes {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+body::before,
+body::after,
+.small-shapes,
+.small-shapes::before {
+    animation: moveShapes 10s infinite ease-in-out;
+}
+
+
+
+h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #d6336c;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #f76a8c, #fad0c4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            padding: 10px 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: floatTitle 5s ease-in-out infinite;
+        }
+        #message {
+            font-size: 1.5em;
+            color: #333;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #d6336c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        button:hover {
+            background-color: #c12a5a;
+        }
+
+        /* Heart using CSS only */
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #d6336c;
+            transform: rotate(-45deg);
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #d6336c;
+        }
+
+        .heart::before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: -25px;
+        }
+
+        /* Floating Up Animation */
+        .float-up {
+            animation: float 2s ease-out forwards;
+        }
+        /* Spinning Animation */
+        .spin {
+            animation: spin 2s ease-in-out forwards;
+        }
+        /* Heartbeat Animation */
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        /* Keyframes for different animations */
+        @keyframes float {
+            0% {
+                bottom: 10px;
+                opacity: 0.9;
+            }
+            100% {
+                bottom: 200px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+        /* Cute Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* More rounded for a cute look */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff98a4);
+    transform: translateY(-5px); /* Slightly lift the button */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px); /* Slightly push down when clicked */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    animation: pulse 1.5s infinite; /* Pulsing animation */
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Things i love about you</h1>
+
+    <div id="message">
+        Click the button !
+    </div>
+
+    <button onclick="showReason()">Show Me A Reason</button>
+
+    <script>
+        // Array containing reasons (add your own reasons here)
+        const reasons = [
+    "You always make me smile.",
+    "You are my best friend.",
+    "You give the best hugs.",
+    "You support me no matter what.",
+    "You make even the ordinary days feel special.",
+    "You are beautiful inside and out.",
+    "You are my safe place.",
+    "You inspire me to be better every day.",
+    "You have the most amazing laugh.",
+    "You are kind and thoughtful.",
+    "You always know how to cheer me up.",
+    "You understand me even when I don’t say a word.",
+    "You bring out the best in me.",
+    "You make life feel like an adventure.",
+    "You make me feel special every day.",
+    "You have the most beautiful eyes.",
+    "You always know what to say to make me feel better.",
+    "You are always there for me.",
+    "You make my heart race every time I see you.",
+    "You have the most adorable smile.",
+    "You bring so much joy into my life.",
+    "You make even the smallest moments feel special.",
+    "You are thoughtful in everything you do.",
+    "You listen to me even when I ramble.",
+    "You laugh at my silly jokes.",
+    "You are always honest with me.",
+    "You care about my feelings.",
+    "You know how to make me feel better when I'm down.",
+    "You are always up for trying new things with me.",
+    "You are my biggest cheerleader.",
+    "You make me feel loved every single day.",
+    "You have a heart of gold.",
+    "You make me want to be a better person.",
+    "You are my partner in crime.",
+    "You believe in me even when I don’t believe in myself.",
+    "You are patient with me.",
+    "You are so talented and creative.",
+    "You are the most caring person I know.",
+    "You always see the good in people.",
+    "You inspire me with your strength and determination.",
+    "You are my dream come true.",
+    "You are always there to listen.",
+    "You give the best advice.",
+    "You have a great sense of humor.",
+    "You love me for who I am.",
+    "You make me feel like the luckiest person in the world.",
+    "You are full of surprises.",
+    "You are my rock when times are tough.",
+    "You challenge me in the best ways possible.",
+    "You make the world feel brighter.",
+    "You are an amazing listener.",
+    "You encourage me to chase my dreams.",
+    "You love me even when I’m at my worst.",
+    "You give the most comforting hugs.",
+    "You never judge me.",
+    "You accept me for who I am.",
+    "You are always there to lift me up when I’m feeling down.",
+    "You are passionate about the things you care about.",
+    "You have the warmest heart.",
+    "You bring so much light into my life.",
+    "You are always looking out for others.",
+    "You are an amazing friend.",
+    "You bring out the best in everyone around you.",
+    "You never fail to make me laugh.",
+    "You make every day better.",
+    "You love me unconditionally.",
+    "You are always up for a good time.",
+    "You are the most thoughtful person I know.",
+    "You make me feel like the most important person in the world.",
+    "You are so generous with your love and time.",
+    "You are so considerate of others.",
+    "You have a way of making everything seem better.",
+    "You are so strong and resilient.",
+    "You have a heart of gold.",
+    "You make me feel special every single day.",
+    "You have the best taste in music.",
+    "You are always there to lend a helping hand.",
+    "You have the most beautiful soul.",
+    "You are so sweet and caring.",
+    "You make me feel like I can do anything.",
+    "You have the cutest quirks.",
+    "You make every moment we spend together unforgettable.",
+    "You are so dependable.",
+    "You are the love of my life.",
+    "You make me feel so loved and cherished.",
+    "You are always there when I need you.",
+    "You have a great sense of style.",
+    "You are my soulmate.",
+    "You are the person I can always count on.",
+    "You are the best thing that ever happened to me.",
+    "You make even the hardest days better.",
+    "You always know how to surprise me.",
+    "You make my heart melt with your smile.",
+    "You are thoughtful in everything you do.",
+    "You care deeply about the people around you.",
+    "You have a contagious positivity.",
+    "You make me a better person.",
+    "You never stop believing in me.",
+    "You are my biggest supporter.",
+    "You make me laugh every day.",
+    "You make life more fun.",
+    "You always know how to make me feel loved.",
+    "You bring peace into my life.",
+    "You are the best part of my day.",
+    "You are such a thoughtful gift-giver.",
+    "You brighten even the darkest days.",
+    "You are always there for me, no matter what.",
+    "You have the most beautiful heart.",
+    "You make me feel like I can conquer anything.",
+    "You make every moment together special.",
+    "You bring so much happiness into my life.",
+    "You are the reason I believe in love.",
+    "You never let me feel alone.",
+    "You are patient and kind.",
+    "You are the one I want to grow old with.",
+    "You understand me like no one else does.",
+    "You have a beautiful heart and soul.",
+    "You make me laugh until I cry.",
+    "You know all my quirks and love me anyway.",
+    "You are always there when I need someone to talk to.",
+    "You make me feel like I’m the only one in the world.",
+    "You always know how to make me smile.",
+    "You make even the mundane feel magical.",
+    "You are my favorite person to be around.",
+    "You never fail to amaze me.",
+    "You are the sunshine in my life.",
+    "You are so incredibly loving and caring.",
+    "You are my reason for everything.",
+    "You are everything I could have ever asked for.",
+    "You make every day feel like a new adventure.",
+    "You are the love of my life.",
+    "You are my forever.",
+    "You always make time for me.",
+    "You have the most captivating smile.",
+    "You bring out the best in others.",
+    "You have the most amazing energy.",
+    "You are always there to lift my spirits.",
+    "You are so adventurous.",
+    "You make every experience worthwhile.",
+    "You have a beautiful way of seeing the world.",
+    "You are incredibly thoughtful.",
+    "You are the most genuine person I know.",
+    "You inspire me to think differently.",
+    "You are my favorite distraction.",
+    "You are the calm in my storm.",
+    "You make me feel alive.",
+    "You are a wonderful storyteller.",
+    "You have the most infectious laugh.",
+    "You are the first person I want to share good news with.",
+    "You have a way of making everything feel better.",
+    "You bring a sense of peace into my life.",
+    "You are my muse.",
+    "You have an incredible sense of style.",
+    "You make me want to travel the world.",
+    "You know how to turn a bad day around.",
+    "You are the perfect combination of strength and softness.",
+    "You have a heart that cares deeply.",
+    "You are a great partner in every way.",
+    "You help me see the beauty in everything.",
+    "You make me feel so special and valued.",
+    "You are the reason I look forward to each day.",
+    "You are my favorite person to share secrets with.",
+    "You make every meal taste better.",
+    "You have the most beautiful spirit.",
+    "You inspire me to be more creative.",
+    "You have a way of making me feel important.",
+    "You are so genuine and real.",
+    "You bring laughter into my life.",
+    "You have a gift for making people feel special.",
+    "You are my greatest adventure.",
+    "You are the reason I believe in true love.",
+    "You are my forever person.",
+    "You make my heart feel full.",
+    "You are the light in my life.",
+    "You make me feel like I can achieve anything.",
+    "You have an amazing sense of humor.",
+    "You always know how to make me feel better.",
+    "You bring so much joy into my life.",
+    "You are the most compassionate person I know.",
+    "You make every day feel like a special occasion.",
+    "You are my favorite person to be around.",
+    "You have the ability to brighten anyone's day.",
+    "You are so thoughtful and caring.",
+    "You are the best listener.",
+    "You have the most amazing insights.",
+    "You make me feel cherished and loved.",
+    "You are my partner in crime.",
+    "You make my heart sing.",
+    "You bring happiness wherever you go.",
+    "You have a heart that knows no bounds.",
+    "You are my greatest source of strength.",
+    "You are the reason I believe in magic.",
+    "You inspire me to love deeper.",
+    "You have a beautiful way with words.",
+    "You make me feel at home, no matter where we are.",
+    "You are my greatest gift.",
+    "You make every moment together feel special.",
+   
+
+        ];
+
+        // Function to show a random reason
+        function showReason() {
+            const randomIndex = Math.floor(Math.random() * reasons.length);
+            const message = reasons[randomIndex];
+            document.getElementById('message').innerText = message;
+
+            // Trigger multiple hearts
+            for (let i = 0; i < 5; i++) {
+                createHeartAnimation();
+            }
+        }
+
+        // Function to create random heart animations at different positions
+        function createHeartAnimation() {
+            // Create a heart element
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+
+            // Randomly select an animation type (floating, spinning, heartbeat)
+            const animations = ['float-up', 'spin', 'heartbeat'];
+            const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+            heart.classList.add(randomAnimation);
+
+            // Add the heart to the body
+            document.body.appendChild(heart);
+
+            // Set the starting position randomly across the screen width and height
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.bottom = Math.random() * 20 + 'vh'; // Slightly randomize the starting vertical position
+
+            // Remove the heart after the animation is complete (after 3 seconds)
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);
+        }
+
+        // Adding more reasons (you can add up to 1000 here)
+        for (let i = 0; i < 1000; i++) {
+        }
+    </script>
+
+</body>
+</html>
+
